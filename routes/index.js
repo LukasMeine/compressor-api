@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const compressor = require('../ervices/compress.js')
+const compressor = require('../services/compress.js')
 
 /* GET home page. */
 router.post('/', function(req, res, next) {
