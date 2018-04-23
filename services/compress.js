@@ -1,5 +1,5 @@
-import axios from "axios";
-import ImageCompressor from "image-compressor.js";
+const axios = require("axios");
+const ImageCompressor = require("image-compressor.js");
 
 function Compressor(request, res) {
   this.request = request;
