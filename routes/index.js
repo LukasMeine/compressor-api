@@ -5,7 +5,8 @@ const compressor = require('../services/compress.js')
 /* GET home page. */
 router.post('/', function(req, res, next) {
     
-    let compress = compressor.Compressor(res,res);
+    let Compressor = new compressor(req,res)
+    let compress = compressor.Compressor();
     compress.compress();
   
 });
