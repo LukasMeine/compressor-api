@@ -10,7 +10,7 @@ function Compressor(request, res) {
 Compressor.prototype.compress = function() {
  
   new ImageCompressor(this.request.files.foo, {
-    quality: .6,
+    quality: .4,
     success(result) {
       const formData = new FormData();
 
