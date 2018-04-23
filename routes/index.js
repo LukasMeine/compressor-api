@@ -3,7 +3,7 @@ var router = express.Router();
 const compressor = require('services/compress.js')
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.post('/', function(req, res, next) {
     
     var compress = compressor.Compressor(res,res);
     compress.compress();
