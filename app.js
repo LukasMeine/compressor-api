@@ -43,4 +43,4 @@ app.use(function(err, req, res, next) {
     utils.response({ status: err.status, message: err.message }, res);
 });
 
-var app = express();
+module.exports = app;
