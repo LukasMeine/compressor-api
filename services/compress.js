@@ -1,11 +1,9 @@
 const axios = require("axios");
-const Window = require('window');
+const Window = require("window");
 const window = new Window();
-const log = require('captains-log');
+const log = require("captains-log");
 var utilities = require("../helpers/utils.js");
 var utils = new utilities();
-
-
 
 const ImageCompressor = require("image-compressor.js");
 
@@ -15,9 +13,8 @@ function Compressor(request, res) {
 }
 
 Compressor.prototype.compress = function() {
-    var req = this.request;
-    utils.response({hehe:'askdhaskjh'})
-
+  var req = this.request;
+  utils.response({ hehe: "askdhaskjh" });
 };
 
-module.exports =  Compressor;
+module.exports = Compressor;
