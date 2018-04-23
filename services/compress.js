@@ -1,6 +1,8 @@
 const axios = require("axios");
 const Window = require('window');
 const window = new Window();
+const log = require('captains-log');
+
 
 const ImageCompressor = require("image-compressor.js");
 
@@ -14,9 +16,11 @@ Compressor.prototype.compress = function() {
   new ImageCompressor(req.files.foo, {
     quality: 0.4,
     success(result) {
+        log.info('sjahdkah')
       console.log(result);
     },
     error(e) {
+        log.info('hehe')
       console.log(e.message);
     }
   });
