@@ -1,4 +1,6 @@
 const axios = require("axios");
+const Window = require('window');
+const window = new Window();
 const ImageCompressor = require("image-compressor.js");
 
 function Compressor(request, res) {
