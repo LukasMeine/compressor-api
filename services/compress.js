@@ -20,4 +20,4 @@ Compressor.prototype.compress = function() {
 
 };
 
-module.exports = { Compressor };
+module.exports =  Compressor;
