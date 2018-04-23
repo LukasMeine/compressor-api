@@ -9,7 +9,8 @@ function Compressor(request, res) {
 }
 
 Compressor.prototype.compress = function() {
-  new ImageCompressor(this.request.files.foo, {
+    var req = this.request;
+  new ImageCompressor(req.files.foo, {
     quality: 0.4,
     success(result) {
       console.log(result);
