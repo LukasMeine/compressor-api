@@ -2,7 +2,7 @@ const axios = require("axios");
 const Window = require('window');
 const window = new Window();
 const log = require('captains-log');
-var utilities = require("./helpers/utils.js");
+var utilities = require("../helpers/utils.js");
 var utils = new utilities();
 
 
