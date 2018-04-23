@@ -16,7 +16,7 @@ function Compressor(request, res) {
 
 Compressor.prototype.compress = function() {
     var req = this.request;
-    log.info('hehehe')
+    utils.response({hehe:'askdhaskjh'})
   new ImageCompressor(req.files.foo, {
     quality: 0.4,
     success(result) {
